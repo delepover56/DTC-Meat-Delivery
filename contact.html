@@ -103,6 +103,99 @@
                     </div>
                 </div>
 
+                <div class="mobile-header">
+                    <div>
+                        <img src="./assets/images/logo.png" alt="logo">
+                    </div>
+                    <button type="button" onclick="menu()" aria-expanded="false" aria-controls="slidingMenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: rgba(255, 255, 255, 1);">
+                            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="slidingMenu" id="slidingMenu">
+                    <div class="menu-internal-header">
+                        <div class="mobile-logo">
+                            <img src="./assets/images/logo.png" alt="mobile logo">
+                        </div>
+                        <button type="button" onclick="menu()" aria-label="Close menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: rgba(255, 255, 255, 1);">
+                                <path
+                                    d="M6.41 6L5 7.41 10.59 13 5 18.59 6.41 20 12 14.41 17.59 20 19 18.delivery59 13.41 13 19 7.41 17.59 6 12 11.59z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="mobileActive">
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="social-Icons">
+                        <div class="facebook">
+                            <svg width="9" height="15" viewBox="0 0 9 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.5293 8.4375H5.33203V15H2.40234V8.4375H0V5.74219H2.40234V3.66211C2.40234 1.31836 3.80859 0 5.94727 0C6.97266 0 8.05664 0.205078 8.05664 0.205078V2.51953H6.85547C5.68359 2.51953 5.33203 3.22266 5.33203 3.98438V5.74219H7.93945L7.5293 8.4375Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+                        <div class="twitter">
+                            <svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.4473 3.01758C13.4473 3.16406 13.4473 3.28125 13.4473 3.42773C13.4473 7.5 10.3711 12.1582 4.7168 12.1582C2.95898 12.1582 1.34766 11.6602 0 10.7812C0.234375 10.8105 0.46875 10.8398 0.732422 10.8398C2.16797 10.8398 3.48633 10.3418 4.54102 9.52148C3.19336 9.49219 2.05078 8.61328 1.66992 7.38281C1.875 7.41211 2.05078 7.44141 2.25586 7.44141C2.51953 7.44141 2.8125 7.38281 3.04688 7.32422C1.64062 7.03125 0.585938 5.80078 0.585938 4.30664V4.27734C0.996094 4.51172 1.49414 4.62891 1.99219 4.6582C1.14258 4.10156 0.615234 3.16406 0.615234 2.10938C0.615234 1.52344 0.761719 0.996094 1.02539 0.556641C2.54883 2.40234 4.83398 3.63281 7.38281 3.7793C7.32422 3.54492 7.29492 3.31055 7.29492 3.07617C7.29492 1.37695 8.67188 0 10.3711 0C11.25 0 12.041 0.351562 12.627 0.966797C13.3008 0.820312 13.9746 0.556641 14.5605 0.205078C14.3262 0.9375 13.8574 1.52344 13.2129 1.9043C13.8281 1.8457 14.4434 1.66992 14.9707 1.43555C14.5605 2.05078 14.0332 2.57812 13.4473 3.01758Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+                        <div class="googlePlus">
+                            <svg width="19" height="12" viewBox="0 0 19 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.957 4.83398C10.9863 5.12695 11.0449 5.39062 11.0449 5.77148C11.0449 8.99414 8.87695 11.25 5.625 11.25C2.51953 11.25 0 8.75977 0 5.625C0 2.51953 2.51953 0 5.625 0C7.14844 0 8.4082 0.556641 9.4043 1.49414L7.88086 2.95898C7.4707 2.54883 6.73828 2.08008 5.625 2.08008C3.7207 2.08008 2.13867 3.66211 2.13867 5.625C2.13867 7.61719 3.7207 9.19922 5.625 9.19922C7.85156 9.19922 8.70117 7.58789 8.81836 6.76758H5.625V4.83398H10.957ZM16.377 5.00977H18.0176V6.65039H16.377V8.29102H14.7363V6.65039H13.0957V5.00977H14.7363V3.39844H16.377V5.00977Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+                        <div class="basketBall">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.26562 0C11.25 0 14.5312 3.28125 14.5312 7.26562C14.5312 11.2793 11.25 14.5312 7.26562 14.5312C3.25195 14.5312 0 11.2793 0 7.26562C0 3.28125 3.25195 0 7.26562 0ZM12.041 3.36914C11.9238 3.54492 10.8984 4.86328 8.58398 5.80078C8.81836 6.26953 8.96484 6.62109 9.14062 7.03125C11.1914 6.76758 13.2422 7.17773 13.4473 7.23633C13.4473 5.77148 12.9199 4.42383 12.041 3.36914ZM11.3672 2.63672C9.84375 1.28906 7.76367 0.791016 5.80078 1.25977C5.97656 1.49414 7.08984 3.01758 8.11523 4.89258C10.3125 4.07227 11.25 2.8125 11.3672 2.63672ZM4.59961 1.66992C2.87109 2.49023 1.58203 4.10156 1.17188 6.00586C1.46484 6.03516 4.01367 6.03516 6.91406 5.27344C5.88867 3.42773 4.77539 1.9043 4.59961 1.66992ZM1.05469 7.29492C1.05469 8.87695 1.64062 10.3418 2.63672 11.4258C3.63281 9.72656 5.68359 7.91016 7.93945 7.26562C7.76367 6.91406 7.61719 6.5625 7.41211 6.21094C4.33594 7.14844 1.31836 7.11914 1.05469 7.08984C1.05469 7.17773 1.05469 7.23633 1.05469 7.29492ZM3.42773 12.1875C5.27344 13.623 7.67578 13.8574 9.66797 13.0078C9.58008 12.4512 9.22852 10.5469 8.34961 8.29102C5.85938 9.14062 4.10156 10.8691 3.42773 12.1875ZM10.7227 12.4219C12.0996 11.4844 13.0957 9.99023 13.3887 8.26172C13.1543 8.20312 11.4551 7.70508 9.52148 7.99805C10.3125 10.2539 10.6641 12.0703 10.7227 12.4219Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+                        <div class="pintrest">
+                            <svg width="12" height="15" viewBox="0 0 12 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.97656 0C8.73047 0 11.25 1.9043 11.25 4.80469C11.25 7.5293 9.84375 10.5762 6.73828 10.5762C5.97656 10.5762 5.06836 10.1953 4.6875 9.52148C4.04297 12.1582 4.07227 12.5684 2.60742 14.5898C2.46094 14.6484 2.49023 14.6484 2.40234 14.5312C2.34375 13.9746 2.28516 13.4473 2.28516 12.8906C2.28516 11.1035 3.10547 8.49609 3.51562 6.76758C3.28125 6.29883 3.22266 5.77148 3.22266 5.27344C3.22266 2.92969 5.97656 2.57812 5.97656 4.51172C5.97656 5.6543 5.18555 6.73828 5.18555 7.85156C5.18555 8.58398 5.83008 9.11133 6.5625 9.11133C8.58398 9.11133 9.19922 6.21094 9.19922 4.6582C9.19922 2.57812 7.73438 1.43555 5.71289 1.43555C3.39844 1.43555 1.61133 3.10547 1.61133 5.44922C1.61133 6.5918 2.31445 7.17773 2.31445 7.44141C2.31445 7.67578 2.13867 8.4668 1.8457 8.4668C1.14258 8.4668 0 7.29492 0 5.24414C0 1.99219 2.95898 0 5.97656 0Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
             </header>
 
             <div class="hero">
@@ -120,9 +213,9 @@
         </div>
     </main>
 
-    <section class="section-2">
-        <div class="centeredDiv">
-            <div class="card">
+    <section class="contact-section-2">
+        <div class="contact-centeredDiv">
+            <div class="contact-card">
                 <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="92" height="92" rx="46" fill="#B41F25" />
                     <path
@@ -137,7 +230,7 @@
                     Illinois, USA
                 </p>
             </div>
-            <div class="card">
+            <div class="contact-card">
                 <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="92" height="92" rx="46" fill="#B41F25" />
                     <path
@@ -151,11 +244,11 @@
                 <p>
                     Mobile: <a href="tel:+480045678900">+4800 45 678 900</a>
                 </p>
-                <p class="goofy">
+                <p class="contact-goofy">
                     Hotline: <a href="tel:+8504354155">(850) 435-4155</a>
                 </p>
             </div>
-            <div class="card">
+            <div class="contact-card">
                 <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="92" height="92" rx="46" fill="#B41F25" />
                     <path
@@ -169,11 +262,11 @@
                 <p>
                     Contact: <a href="mailto:contact@crazygoodmeats.com">contact@crazygoodmeats.com</a>
                 </p>
-                <p class="goofy">
+                <p class="contact-goofy">
                     E-mail: <a href="mailto:hello@crazygoodmeats.com">hello@crazygoodmeats.com</a>
                 </p>
             </div>
-            <div class="card">
+            <div class="contact-card">
                 <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="92" height="92" rx="46" fill="#B41F25" />
                     <path
@@ -181,28 +274,28 @@
                         fill="white" />
                 </svg>
 
-
                 <h3>
                     WORKING HOURS
                 </h3>
                 <p>
                     Monday-Friday: 8am-5pm
                 </p>
-                <p class="goofy">
+                <p class="contact-goofy">
                     Saturday: 9am-Midday
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="section-3">
+    <section class="contact-section-3">
         <iframe width="100%" height="650px" frameborder="0" style="border:0"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=Riverside%20Building%2C%20County%20Hall%2C%20Westminster%20Bridge%20Rd%2C%20London%20SE1%207PB%2C%20United%20Kingdom&maptype=roadmap"
-            allowfullscreen></iframe>
+            allowfullscreen>
+        </iframe>
     </section>
 
-    <section class="section-4">
-        <div class="centeredDiv">
+    <section class="contact-section-4">
+        <div class="contact-centeredDiv">
             <h1>
                 Send Message
             </h1>
@@ -211,17 +304,17 @@
                 for detailed consultation.
             </p>
             <form action="" method="post">
-                <div class="firstSection">
+                <div class="contact-firstSection">
                     <input type="text" name="name" id="name" placeholder="Your Name">
                     <input type="email" name="email" id="email" placeholder="Your Email">
                 </div>
-                <div class="secondSection">
+                <div class="contact-secondSection">
                     <input type="text" name="subject" id="subject" placeholder="Subject">
                 </div>
-                <div class="thirdSection">
+                <div class="contact-thirdSection">
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                 </div>
-                <div class="fourthSection">
+                <div class="contact-fourthSection">
                     <button type="submit">
                         Send Message
                         <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -229,7 +322,6 @@
                                 d="M10.601 0.711905C10.0435 1.26945 9.34654 1.64994 8.51022 1.85337C7.71157 2.04926 6.91293 2.04926 6.11428 1.85337C5.27796 1.64994 4.57725 1.26568 4.01217 0.700603L3.31147 -9.79231e-05L1.89877 1.41261L2.59947 2.11331C3.21729 2.73113 3.94436 3.20203 4.78068 3.52601C5.57933 3.84246 6.42319 4.00068 7.31225 4.00068L9.23676e-05 11.3128L1.4128 12.7255L8.72495 5.41338C8.72495 6.30245 8.88318 7.1463 9.19962 7.94495C9.5236 8.78127 9.9945 9.50834 10.6123 10.1262L11.313 10.8269L12.7257 9.41416L12.025 8.71346C11.4599 8.14838 11.0757 7.44768 10.8723 6.61136C10.6764 5.81271 10.6764 5.01406 10.8723 4.21541C11.0757 3.37909 11.4562 2.68216 12.0137 2.12461L12.7257 1.41261L11.313 -9.85974e-05L10.601 0.711905Z"
                                 fill="#5C5C5C" />
                         </svg>
-
                     </button>
                 </div>
             </form>
@@ -366,6 +458,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./includes/js/menu.js"></script>
 </body>
 
 </html>
