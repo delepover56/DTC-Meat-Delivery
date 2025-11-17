@@ -973,7 +973,7 @@ footer {
           position: fixed;
           top: 0;
           right: 0;
-          height: 100vh;
+          height: 100dvh;
           width: clamp(250px, 80vw, 20rem);
           z-index: 9999 !important;
           padding: var(--spacing-md) 0;
